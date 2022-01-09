@@ -33,7 +33,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
     public void onClick2(View view) {
         Intent i;
-        i = new Intent(this, Screen_date.class);
+        i = new Intent(this, Screen_Date.class);
         startActivity(i);
     }
 
