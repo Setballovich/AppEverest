@@ -13,10 +13,8 @@ TextView textView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telephone_date);
-        textView = (TextView) this.findViewById(R.id.textView3);
-
+        textView = this.findViewById(R.id.textView3);
         TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-
         textView.append("\nCall state: " + TS.callState(tm.getCallState( )));
         textView.append("\nPhone type: " + TS.phoneType(tm.getPhoneType( )));
         textView.append("\nNetwork country ISO: " + tm.getNetworkCountryIso());
