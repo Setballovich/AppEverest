@@ -4,6 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".SecondActivity">
 
+    <Button
+        android:id="@+id/Screen_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:shadowColor="@color/black"
+        android:text="Экран"
+        app:layout_constraintBottom_toTopOf="@+id/Battery_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telephone_button" />
+
+    <Button
+        android:id="@+id/Sensors_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick4"
+        android:text="Датчики"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Battery_button" />
+
+    <Button
+        android:id="@+id/Battery_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@android:drawable/ic_lock_idle_low_battery"
+        android:onClick="onClick3"
+        android:text="Батарея"
+        app:layout_constraintBottom_toTopOf="@+id/Sensors_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Screen_button" />
+
+    <Button
+        android:id="@+id/telephone_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:drawableRight="@android:drawable/stat_sys_phone_call"
+        android:onClick="onClick"
+        android:shadowColor="@color/teal_200"
+        android:text="Телефон и сеть"
+        app:layout_constraintBottom_toTopOf="@+id/Screen_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:rippleColor="#AD1457" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="EVEREST"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/telephone_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
