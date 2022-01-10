@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,9 +20,9 @@ import android.widget.TextView;
 public class Sensors_date extends AppCompatActivity implements SensorEventListener {
     private static final String TAG = "Light_sensor";
 
-    private SensorManager sensorManager;
+    public SensorManager sensorManager;
 
-    private Sensor accelerometr,mGyro,mMagno,mLight,mPressure,mTemp,mHumi;
+    public Sensor accelerometr,mGyro,mMagno,mLight,mPressure,mTemp,mHumi;
 
 
     TextView xValue,yValue,zValue,xGyroValue,yGyroValue,zGyroValue, xMagnoValue, yMagnoValue,zMagnoValue,light,pressure,temp,humi;
@@ -56,9 +57,9 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,accelerometr,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered accelerometer listener");
         }else {
-            xValue.setText("Accelerometer Not Supported ");
-            yValue.setText("Accelerometer Not Supported ");
-            zValue.setText("Accelerometer Not Supported ");
+            xValue.setText(R.string.x);
+            yValue.setText(R.string.y);
+            zValue.setText(R.string.z);
 
         }
 
@@ -67,9 +68,9 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,mGyro,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered Gyro listener");
         }else {
-            xGyroValue.setText("Gyro Not Supported ");
-            yGyroValue.setText("Gyro Not Supported ");
-            zGyroValue.setText("Gyro Not Supported ");
+            xGyroValue.setText(R.string.xGyro);
+            yGyroValue.setText(R.string.yGyro);
+            zGyroValue.setText(R.string.zGyro);
         }
 
         mMagno = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -77,9 +78,9 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,mMagno,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered Magnometer listener");
         }else {
-            xMagnoValue.setText("Magno Not Supported ");
-            yMagnoValue.setText("Magno Not Supported ");
-            zMagnoValue.setText("Magno Not Supported ");
+            xMagnoValue.setText(R.string.xMagno);
+            yMagnoValue.setText(R.string.yMagno);
+            zMagnoValue.setText(R.string.zMagno);
         }
 
         mLight = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
@@ -87,7 +88,7 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,mLight,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered light listener");
         }else {
-            light.setText("light Not Supported ");
+            light.setText(R.string.Light);
         }
 
         mPressure = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
@@ -95,7 +96,7 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,mPressure,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered Pressure listener");
         }else {
-            pressure.setText("Pressure Not Supported ");
+            pressure.setText(R.string.pressure);
         }
 
         mTemp = sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
@@ -103,7 +104,7 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,mTemp,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered Temp listener");
         }else {
-            temp.setText("Temp Not Supported ");
+            temp.setText(R.string.temp);
         }
 
         mHumi = sensorManager.getDefaultSensor(Sensor.TYPE_RELATIVE_HUMIDITY);
@@ -111,7 +112,7 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
             sensorManager.registerListener(Sensors_date.this,mHumi,SensorManager.SENSOR_DELAY_NORMAL);
             Log.d(TAG, "onCreate: Registered Humi listener");
         }else {
-            humi.setText("humi Not Supported ");
+            humi.setText(R.string.humi);
         }
 
     }
@@ -120,6 +121,7 @@ public class Sensors_date extends AppCompatActivity implements SensorEventListen
     public void onAccuracyChanged(Sensor sensor, int i) {
 
     }
+    @SuppressLint("SetTextI18n")
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         Sensor sensor = sensorEvent.sensor;

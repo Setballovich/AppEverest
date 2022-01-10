@@ -7,4 +7,17 @@
     <string name="Battery">Батарея</string>
     <string name="Telephone">Телефон и сеть</string>
     <string name="everest2">EVEREST</string>
+    <string name="x">\"Accelerometer Not Supported \"</string>
+    <string name="y">\"Accelerometer Not Supported \"</string>
+    <string name="z">\"Accelerometer Not Supported \"</string>
+    <string name="xGyro">\"Gyro Not Supported \"</string>
+    <string name="yGyro">\"Gyro Not Supported \"</string>
+    <string name="zGyro">\"Gyro Not Supported \"</string>
+    <string name="xMagno">\"Magno Not Supported \"</string>
+    <string name="yMagno">\"Magno Not Supported \"</string>
+    <string name="zMagno">\"Magno Not Supported \"</string>
+    <string name="Light">\"light Not Supported \"</string>
+    <string name="pressure">\"Pressure Not Supported \"</string>
+    <string name="temp">\"Temp Not Supported \"</string>
+    <string name="humi">\"humi Not Supported \"</string>
 </resources>
