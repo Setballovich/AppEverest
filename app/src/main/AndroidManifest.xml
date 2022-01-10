@@ -19,7 +19,7 @@
             android:name=".Screen_Date"
             android:exported="false" />
         <activity
-            android:name=".telephone_date"
+            android:name=".Telephone_Date"
             android:exported="false" />
         <activity
             android:name=".SecondActivity"

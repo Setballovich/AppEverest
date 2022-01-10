@@ -31,23 +31,6 @@ public class TS {
             }
         }
 
-        public static String networkType(Integer type) {
-            switch (type) {
-                case TelephonyManager.NETWORK_TYPE_UNKNOWN:
-                    return "NONE";
-                case TelephonyManager.NETWORK_TYPE_GPRS:
-                    return "GPRS";
-                case TelephonyManager.NETWORK_TYPE_EDGE:
-                    return "EDGE";
-                case TelephonyManager.NETWORK_TYPE_UMTS:
-                    return "UMTS";
-                case TelephonyManager.NETWORK_TYPE_CDMA:
-                    return "CDMA";
-                default:
-                    return "UNDEFINED";
-            }
-        }
-
         public static String dataState(Integer state) {
             switch (state) {
                 case TelephonyManager.DATA_DISCONNECTED:
