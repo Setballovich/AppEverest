@@ -20,4 +20,10 @@
     <string name="pressure">\"Pressure Not Supported \"</string>
     <string name="temp">\"Temp Not Supported \"</string>
     <string name="humi">\"humi Not Supported \"</string>
+    <string name="item">\О программе \</string>
+    <string name="Text1">Курсовой проект</string>
+    <string name="Text2">Приложение для мониторинга состояния телефона и вывода на экран показаний встроенных датчиков</string>
+    <string name="Text3">Участники проекта:</string>
+    <string name="Text4">Попов И, Бушуева А, Швейцер Н:</string>
+
 </resources>
