@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Sensors_date"
+            android:exported="false" />
+        <activity
             android:name=".Battery_Date"
             android:exported="false" />
         <activity

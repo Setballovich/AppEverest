@@ -17,11 +17,11 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         Button telephone_button = (Button) findViewById(R.id.telephone_button);
         telephone_button.setOnClickListener(this);
         Button Screen_button = (Button) findViewById(R.id.Screen_button);
-        telephone_button.setOnClickListener(this);
+        Screen_button.setOnClickListener(this);
         Button Battery_button = (Button) findViewById(R.id.Battery_button);
-        telephone_button.setOnClickListener(this);
+        Battery_button.setOnClickListener(this);
         Button Sensors_button = (Button) findViewById(R.id.Sensors_button);
-        telephone_button.setOnClickListener(this);
+        Sensors_button.setOnClickListener(this);
     }
 
     @Override
