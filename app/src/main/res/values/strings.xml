@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="everest">EVEREST</string>
+    <string name="phone_status_info">phone status info</string>
+    <string name="Screen">Экран</string>
+    <string name="Sensors">Датчики</string>
+    <string name="Battery">Батарея</string>
+    <string name="Telephone">Телефон и сеть</string>
+    <string name="everest2">EVEREST</string>
 </resources>
