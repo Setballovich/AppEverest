@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".Telephone_Date">
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="409dp"
         android:layout_height="0dp"
-        android:textColor="@android:color/holo_green_light"
-        android:textSize="20sp"
+        android:background="@drawable/telephone"
         android:padding="20sp"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

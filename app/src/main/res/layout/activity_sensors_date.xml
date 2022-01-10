@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/sensors"
     android:padding="50sp"
     tools:context=".Sensors_date">
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Акселерометр"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,32 +32,33 @@
             android:id="@+id/xValue"
             android:layout_width="100sp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@color/purple_700" />
 
         <TextView
             android:id="@+id/yValue"
             android:layout_width="100sp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@color/purple_700" />
 
         <TextView
             android:id="@+id/zValue"
             android:layout_width="100sp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@color/purple_700" />
 
     </LinearLayout>
+
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="105dp"
-    android:text="Гироскоп"
-    android:textColor="@color/white"
-    android:textSize="16sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:text="Гироскоп"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/secondLayout"
@@ -72,27 +73,28 @@
             android:id="@+id/xGyroValue"
             android:layout_width="100sp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@color/purple_700" />
 
         <TextView
             android:id="@+id/yGyroValue"
             android:layout_width="100sp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@color/purple_700" />
 
         <TextView
             android:id="@+id/zGyroValue"
             android:layout_width="100sp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@color/purple_700" />
 
     </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="197dp"
         android:text="Магнитомер"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,58 +110,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondLayout">
 
-    <TextView
-        android:id="@+id/xMagnoValue"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/xMagnoValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700" />
 
-    <TextView
-        android:id="@+id/yMagnoValue"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/yMagnoValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700" />
 
-    <TextView
-        android:id="@+id/zMagnoValue"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/zMagnoValue"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700" />
     </LinearLayout>
 
 
-        <LinearLayout
-            android:id="@+id/fourthLayout"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/fourthLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdLayout">
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="200sp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:orientation="vertical"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/thirdLayout">
+            android:textColor="@color/purple_700" />
 
-            <TextView
-                android:id="@+id/light"
-                android:layout_width="200sp"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700" />
 
-            <TextView
-                android:id="@+id/pressure"
-                android:layout_width="200sp"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700" />
 
-            <TextView
-                android:id="@+id/temp"
-                android:layout_width="200sp"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/holo_green_light" />
-
-            <TextView
-                android:id="@+id/humi"
-                android:layout_width="200sp"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/humi"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700" />
 
     </LinearLayout>
 
